@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Varela+Round&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.brand img{
+    width:150px;
+    border-radius: 50%;
+}
+.brand{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1rem;
+    
+}
+.brand h3{
+  color:black;
+  font-family: 'Ubuntu',sans-serif;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  background:#eee;
+  background-color: antiquewhite;
+
+}
+.cl{
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  position: absolute;
+  top: 5%;
+  left: 40%;
+  width: 300px;
+  height: 450px;
+  perspective: 900px;
+}
+
+.container {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transition: .5s all ease;
+  transform: rotateX(60deg) scale(0.7);
+  perspective: 900px;
+  box-shadow: 0px 20px 50px #555;
+  animation: entry 1s linear 1;
+}
+
+#c0 {
+  position: absolute;
+  top: 12%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #eba65b 30%, #d99267 100%);
+  z-index: 300;
+  box-shadow: 0px 20px 100px #555;
+}
+
+#c1 {
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+  left: 100%;
+  z-index: 0;
+  top: 12%;
+}
+
+#c2 {
+  left: -100%;
+  top: 12%;
+  z-index: 0;
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+}
+
+.container:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(10px);
+  transition: .5s all ease;
+  z-index: 400;
+}
+
+.image {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 45%;
+  background: linear-gradient(to top, #eba65b 30%, #d99267 100%);
+}
+
+#i1 {
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+}
+
+#i2 {
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+
+}
+
+
+
+
+
+.story {
+  position: absolute;
+  top: 60%;
+  left: 0%;
+  height: 55%;
+  width: 100%;
+  background: linear-gradient(to bottom, #eba65b 0%, #d99267 40%);
+  z-index: 30;
+}
+
+#s1 {
+  background: linear-gradient(to top, #5b62a2 0%, #7b88d1 100%);
+}
+
+#s2 {
+  background: linear-gradient(to top, #5b62a2 0%, #7b88d1 120%);
+}
+
+.info {
+  position: absolute;
+  top: 10%;
+}
+
+h3 {
+  text-align: center;
+  text-shadow: 0px 0px 10px #eee;
+  color: #eee;
+  letter-spacing: 2px;
+}
+
+h4 {
+  color: #111;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  letter-spacing: 2px;
+}
+
+h1 {
+  color: #111;
+  position: fixed;
+  top: 0%;
+  left: 30%;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 14px;
+  color: #fff;
+  padding: 0px 20px 20px 20px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+
+
+
+.bday img{
+  width:100%;
+  
+}
+
+.bottom{
+    position: absolute;
+    height:70px;
+    background-color: black;
+    color:white;
+    bottom:0px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.icons{
+    margin:14px;
+}
+#myProgressBar{
+    width:80vw;
+    cursor:pointer;
+}
+/*.songItemContainer{
+    margin-top: 70px;
+}
+.songItem{
+    height:50px;
+    display:flex;
+    background-color: white;
+    
+    color: black;
+    margin:12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+.songItem img{
+    width:40px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+.timestamp{
+    margin:0 10px;
+    padding:0 2px;
+    display: flex;
+}*/
+.timestamp i{
+    cursor:pointer;
+}
+/*
+.songInfo img{
+    opacity:0;
+    transition: opacity 0.4s ease-in;
+}*/
+.songInfo{
+  position:absolute;
+  left:10vw;
+}
+
+@media(max-width:500px){
+  .brand{
+    font-size: 0.7rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    position: fixed;
+    top:20px;
+    left:20px;
+}
+
+.brand img{
+    width:80px;
+    border-radius: 50%;
+    
+}
+.wrapper {
+  position:fixed;
+  top: 0%;
+  left: 40%;
+  width: 120px;
+  height: 380px;
+  perspective: 900px;
+  display: flex;
+  flex-direction: column;
+}
+#c0{
+  top:60%;
+  
+}
+#c1{
+  top:60%;
+  
+}
+#c2{
+  top:60%;
+  
+}
+p{
+  font-size: 7px;
+}
+#bd{
+  
+  display: flex;
+  flex-direction: column;
+}
+.bottom{
+  position: fixed;
+  bottom: 0;
+}
+.cl .wrapper .bday{
+  display: flex;
+  flex-direction: column;
+}
+.story{
+  height:56%;
+}
+
+}
